@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\bin\Debug\net8.0\Crud.Communication.deps.json
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\bin\Debug\net8.0\Crud.Communication.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\bin\Debug\net8.0\Crud.Communication.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\refint\Crud.Communication.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\Crud.Communication.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Communication\obj\Debug\net8.0\ref\Crud.Communication.dll
