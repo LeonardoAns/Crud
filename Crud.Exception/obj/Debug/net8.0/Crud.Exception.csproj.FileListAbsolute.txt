@@ -1,0 +1,16 @@
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\bin\Debug\net8.0\Crud.Exception.deps.json
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\bin\Debug\net8.0\Crud.Exception.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\bin\Debug\net8.0\Crud.Exception.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\bin\Debug\net8.0\Crud.Communication.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\bin\Debug\net8.0\Crud.Communication.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.sourcelink.json
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exc.ACB256EC.Up2Date
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\refint\Crud.Exception.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\Crud.Exception.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Exception\obj\Debug\net8.0\ref\Crud.Exception.dll

@@ -1,0 +1,12 @@
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\bin\Debug\net8.0\Crud.Domain.deps.json
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\bin\Debug\net8.0\Crud.Domain.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\bin\Debug\net8.0\Crud.Domain.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.sourcelink.json
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\refint\Crud.Domain.dll
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\Crud.Domain.pdb
+C:\Users\Leonardo\Desktop\C#\Crud\Crud.Domain\obj\Debug\net8.0\ref\Crud.Domain.dll
