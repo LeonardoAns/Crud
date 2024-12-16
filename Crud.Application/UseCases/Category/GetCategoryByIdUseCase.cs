@@ -18,7 +18,8 @@ public class GetCategoryByIdUseCase : IGetCategoryByIdUseCase {
     }
 
     public async Task<CategoryResponseJson> Execute(long id){
-        Category? category = await _categoryRepository.FindByIdAsync(id);
+        Category category = await _categoryRepository.FindByIdAsync(id)??
+                            throw new NotFoundException("Category Not Founed");
         return _mapper.Map<CategoryResponseJson>(category);
     }
 }

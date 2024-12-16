@@ -1,4 +1,5 @@
 using Crud.Application.IUseCases;
+using Crud.Domain.Entities;
 using Crud.Domain.Repositories.Category;
 using Crud.Domain.Repositories.UnitOfWork;
 using Crud.Exception.ExceptionModel;
@@ -17,12 +18,9 @@ public class DeleteCategoryUseCase : IDeleteCategoryUseCase {
     }
 
     public async Task Execute(long id){
-        bool response = await _categoryRepository.DeleteAsync(id);
-
-        if (response != true){
-            throw new NotFoundException("Category Not Found");
-        }
-
+        Category category = await _categoryRepository.FindByIdAsync(id) ??
+                            throw new NotFoundException("Category Not Found");
+        await _categoryRepository.DeleteAsync(category);
         await _unitOfWork.Commit();
     }
 }

@@ -10,11 +10,9 @@ namespace Crud.Infrastructure.Repositories;
 public class ProductRepository : IProductRepository {
 
     private CrudDbContext _dbContext;
-    private readonly IMapper _mapper;
 
-    public ProductRepository(CrudDbContext dbContext, IMapper mapper){
+    public ProductRepository(CrudDbContext dbContext){
         _dbContext = dbContext;
-        _mapper = mapper;
     }
 
     public async Task AddAsync(Product product){
@@ -35,8 +33,7 @@ public class ProductRepository : IProductRepository {
     }
 
     public async Task UpdateAsync(long id, Product request){
-        var product = await FindByIdAsync(id);
-        _dbContext.Products.Update(product);
+        _dbContext.Products.Update(request);
     }
 
     public async Task<Category?> GetCategoryByIdAsync(long categoryId) {

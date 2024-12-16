@@ -31,7 +31,7 @@ public class RegisterCategoryUseCase : IRegisterCategoryUseCase {
     }
 
     private void Validate(CategoryRequestJson request){
-        var validator = new RegisterCategoryValidator().Validate(request);
+        var validator = new CategoryRequestValidator().Validate(request);
 
         if (!validator.IsValid){
             var errorMessages = validator.Errors.Select(error => error.ErrorMessage).ToList();

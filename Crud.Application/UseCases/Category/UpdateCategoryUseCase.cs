@@ -22,15 +22,15 @@ public class UpdateCategoryUseCase : IUpdateCategoryUseCase {
     }
 
     public async Task Execute(long id, CategoryRequestJson request){
+        Category category = await _categoryRepository.FindByIdAsync(id) ?? throw new NotFoundException("Category Not Found");
         Validate(request);
-        Category category = _mapper.Map<Category>(request);
+        _mapper.Map(request, category);
         await _categoryRepository.UpdateAsync(id, category);
-
-        _unitOfWork.Commit();
+        await _unitOfWork.Commit();
     }
 
     private void Validate(CategoryRequestJson request){
-        var validator = new RegisterCategoryValidator().Validate(request);
+        var validator = new CategoryRequestValidator().Validate(request);
 
         if (!validator.IsValid){
             var errorMessages = validator.Errors.Select(error => error.ErrorMessage).ToList();

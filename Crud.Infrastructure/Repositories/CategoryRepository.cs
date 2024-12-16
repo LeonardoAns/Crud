@@ -23,37 +23,19 @@ public class CategoryRepository : ICategoryRepository {
 
     public async Task<List<Category>> GetAllAsync(){ 
         return await _dbContext.Categories.ToListAsync();
-
     }
 
-    public async Task<bool> DeleteAsync(long id){
-        Category? category = await _dbContext.Categories.FindAsync(id);
+    public async Task DeleteAsync(Category category){
+        _dbContext.Categories.Remove(category);
+    }
 
-        if (category != null){
-            _dbContext.Categories.Remove(category);
-            return true;
-        }
-        return false;
+    public async Task<Category> FindByIdAsync(long id){
+        return await _dbContext.Categories.FindAsync(id);
         
-    }
-
-    public async Task<Category> FindByIdAsync(long id)
-    {
-        var category = await _dbContext.Categories.FindAsync(id);
-        if (category is null)
-        {
-            throw new NotFoundException("Categoria não encontrada.");
-        }
-        return category;
     }
 
 
     public async Task UpdateAsync(long id, Category request){
-        var category = await FindByIdAsync(id);
-
-        if (category is null){
-            throw new NotFoundException("Category Not Found");
-        }
-        _dbContext.Categories.Update(category);
+        _dbContext.Categories.Update(request);
     }
 }

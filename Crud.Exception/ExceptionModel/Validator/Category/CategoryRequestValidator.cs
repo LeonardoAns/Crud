@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace Crud.Exception.ExceptionModel.Validator.Category;
 
-public class RegisterCategoryValidator : AbstractValidator<CategoryRequestJson> {
+public class CategoryRequestValidator : AbstractValidator<CategoryRequestJson> {
 
-    public RegisterCategoryValidator(){
+    public CategoryRequestValidator(){
         RuleFor(category => category.Name)
             .NotEmpty()
             .WithMessage("Name is Required");

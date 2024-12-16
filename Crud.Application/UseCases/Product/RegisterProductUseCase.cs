@@ -1,5 +1,6 @@
 using Crud.Domain.Repositories.UnitOfWork;
 using Crud.Exception.ExceptionModel;
+using Crud.Exception.ExceptionModel.Validator.Product;
 
 namespace Crud.Application.UseCases.Product;
 
@@ -21,11 +22,11 @@ public class RegisterProductUseCase : IRegisterProductUseCase {
         _unitOfWork = unitOfWork;
     }
 
-    public async Task Execute(ProductRequestJson request)
-    {
+    public async Task Execute(ProductRequestJson request){
+        Validate(request);
+        
         var category = await _productRepository.GetCategoryByIdAsync(request.CategoryId);
-        if (category == null)
-        {
+        if (category is null){
             throw new NotFoundException("Category not found"); 
         }
 
@@ -34,5 +35,14 @@ public class RegisterProductUseCase : IRegisterProductUseCase {
         
         await _productRepository.AddAsync(product);
         await _unitOfWork.Commit();
+    }
+    
+    private void Validate(ProductRequestJson request){
+        var validator = new ProductRequestValidator().Validate(request);
+
+        if (!validator.IsValid){
+            var errorMessages = validator.Errors.Select(error => error.ErrorMessage).ToList();
+            throw new InvalidRequestException(errorMessages);
+        }
     }
 }
