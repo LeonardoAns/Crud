@@ -5,4 +5,8 @@ public interface IUserRepository {
     Task AddAsync(User user);
     Task<bool> ExistsByEmail(string email);
     Task<User?> GetUserByEmail(string email);
+
+    Task<User?> FindById(long id);
+
+    Task<User?> GetByIdentifier();
 }

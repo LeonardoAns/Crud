@@ -36,6 +36,7 @@ public static class DependencyInjectionExtension {
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork>();
         services.AddScoped<IPasswordEncripter, BCryptConfig>();
+        services.AddScoped<ITokenProvider, TokenProvider>();
     }
 
     private static void AddDbContext(IServiceCollection services, IConfiguration configuration){

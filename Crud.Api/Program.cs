@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
 builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddAuthentication(config => {
     config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
