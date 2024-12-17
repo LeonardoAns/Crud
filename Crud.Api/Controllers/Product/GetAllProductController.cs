@@ -1,11 +1,13 @@
 using Communication.Response.Response;
 using Crud.Application.IUseCases.Product;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Crud.Api.Controllers.Product;
 
 [Route("products")]
 [ApiController]
+[Authorize]
 public class GetAllProductController : ControllerBase{
 
     [Route("getall")]

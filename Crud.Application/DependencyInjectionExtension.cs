@@ -1,9 +1,12 @@
 using System.ComponentModel.Design;
+using Communication.Requests.User;
 using Crud.Application.AutoMapping;
 using Crud.Application.IUseCases;
 using Crud.Application.IUseCases.Product;
+using Crud.Application.IUseCases.User;
 using Crud.Application.UseCases;
 using Crud.Application.UseCases.Product;
+using Crud.Application.UseCases.User;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Crud.Application;
@@ -29,6 +32,10 @@ public static class DependencyInjectionExtension {
         services.AddScoped<IDeleteProductUseCase, DeleteProductUseCase>();
         services.AddScoped<IGetProductByIdUseCase, GetProductByIdUseCase>();
         services.AddScoped<IUpdateProductUseCase, UpdateProductUseCase>();
+        
+        //Users
+        services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
+        services.AddScoped<ILoginUserUserCase, LoginUserUseCase>();
     }
 
     private static void AddAutoMapper(IServiceCollection services){

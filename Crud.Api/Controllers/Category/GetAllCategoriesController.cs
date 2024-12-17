@@ -1,11 +1,13 @@
 using Communication.Response.Category;
 using Crud.Application.IUseCases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Crud.Api.Controllers.Category;
 
 [ApiController]
 [Route("categories")]
+[Authorize]
 public class GetAllCategoriesController : ControllerBase{
     
     [HttpGet]

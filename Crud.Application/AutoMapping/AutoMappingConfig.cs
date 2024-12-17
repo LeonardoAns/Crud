@@ -1,6 +1,7 @@
 using AutoMapper;
 using Communication.Requests.Category;
 using Communication.Requests.Product;
+using Communication.Requests.User;
 using Communication.Response.Category;
 using Communication.Response.Response;
 using Crud.Domain.Entities;
@@ -20,6 +21,8 @@ public class AutoMappingConfig : Profile
         CreateMap<CategoryRequestJson, Category>();
         CreateMap<ProductRequestJson, Product>()
             .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.CategoryId));
+        CreateMap<RegisterUserRequestJson, User>()
+            .ForMember(dest => dest.Password, config => config.Ignore());
     }
 
     private void EntityToResponse()

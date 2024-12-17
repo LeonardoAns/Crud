@@ -1,10 +1,12 @@
 using Communication.Response.Response;
 using Crud.Application.IUseCases.Product;
 using Crud.Exception.ExceptionModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("products")]
 [ApiController]
+[Authorize]
 public class GetProductByIdController : ControllerBase
 {
     [HttpGet("get/{productId}")]

@@ -22,7 +22,7 @@ public class CategoryRepository : ICategoryRepository {
     }
 
     public async Task<List<Category>> GetAllAsync(){ 
-        return await _dbContext.Categories.ToListAsync();
+        return await _dbContext.Categories.AsNoTracking().ToListAsync();
     }
 
     public async Task DeleteAsync(Category category){

@@ -1,12 +1,14 @@
 using Communication.Requests.Product;
 using Crud.Application.IUseCases.Product;
 using Crud.Exception.ExceptionModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Crud.Api.Controllers.Product;
 
 [Route("products")]
 [ApiController]
+[Authorize]
 public class RegisterProductController : ControllerBase{
 
     [HttpPost]
